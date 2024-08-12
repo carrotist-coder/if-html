@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.advantages {
+  width: 1440px;
+  height: 569px;
+  color: #ffffff;
+}
+
+.heading {
+  /*display: inline-block;*/
+  width: 305px;
+  height: 47px;
+  color: #383838;
+  padding: 120px 568px 402px 567px;
+}
+
+hr {
+  box-sizing: border-box;
+  border: 1px solid #f5bd41;
+  width: 100px;
+}
