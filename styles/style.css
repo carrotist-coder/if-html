@@ -53,4 +53,5 @@ p {
 .blocks {
   width: 100%;
   height: 184px;
+  white-space: nowrap; /* Prevents the transfer of blocks */
 }
