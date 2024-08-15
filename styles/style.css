@@ -8,7 +8,14 @@ body {
   font-style: normal;
 }
 
-h1 {
+.advantages {
+  width: 1440px;
+  height: 569px;
+  color: #ffffff;
+  padding: 120px 0;
+}
+
+.block-heading {
   text-align: center;
   font-size: 40px;
   color: #383838;
@@ -17,13 +24,13 @@ h1 {
   margin-bottom: 20px;
 }
 
-hr {
+.block-line {
   border: 2px solid #f5bd41;
   width: 100px;
   margin: auto;
 }
 
-p {
+.block-text {
   color: #383838;
   font-size: 24px;
   font-weight: 400;
@@ -31,11 +38,58 @@ p {
   margin-top: 48px;
 }
 
-.advantages {
+.footer {
   width: 1440px;
-  height: 569px;
+  height: 625px;
+  background-color: #10367c;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 120px 272px 120px 104px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.footer-block {
+}
+
+.footer-block-1 {
+  width: 193px;
+  height: 211px;
+  margin-bottom: 158px;
+}
+
+.footer-block-2 {
+  width: 133px;
+  height: 305px;
+}
+
+.footer-block-3 {
+  width: 232px;
+  height: 117px;
+}
+
+.footer-text {
   color: #ffffff;
-  padding: 120px 0;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.footer-bold {
+  font-weight: 500;
+}
+
+.footer-copyright {
+  width: 100%;
+}
+
+.text-copyright {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
 }
 
 .container {
