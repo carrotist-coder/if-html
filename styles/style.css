@@ -79,8 +79,6 @@ body {
 
 .page-form {
   width: 100%;
-  /*display: flex;*/
-  /*justify-content: flex-start;*/
 }
 
 .page-textzone {
@@ -146,6 +144,13 @@ body {
   color: #ffffff;
   border-radius: 8px;
   font-size: 24px;
+}
+
+.page-apps {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
 .advantages {
