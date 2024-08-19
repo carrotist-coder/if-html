@@ -10,6 +10,18 @@ body {
   font-style: normal;
 }
 
+.top-section {
+  min-height: 900px;
+  max-width: 1440px;
+  background-image: url("./../images/triphouse-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.top-title {
+}
+
 .advantages {
   max-width: 1440px;
   width: 100%;
