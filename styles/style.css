@@ -77,19 +77,42 @@ body {
   line-height: 59px;
 }
 
+.page-form {
+  width: 100%;
+  /*display: flex;*/
+  /*justify-content: flex-start;*/
+}
+
 .page-textzone {
   display: flex;
-  justify-content: flex-start;
   padding-top: 100px;
+  padding-bottom: 24px;
 }
 
 .page-text {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   color: #ffffff;
   font-weight: 400;
   line-height: 21px;
-  flex-basis: 25%;
+}
+
+.page-inputs {
+  min-height: 64px;
+  display: flex;
+}
+
+.page-input-1 {
+  flex-basis: 40%;
+}
+.page-input-2 {
+  flex-basis: 20%;
+}
+.page-input-3 {
+  flex-basis: 30%;
+}
+.page-button {
+  flex-basis: 15%;
 }
 
 .advantages {
