@@ -98,21 +98,54 @@ body {
 }
 
 .page-inputs {
+  background-color: #ffffff;
+  border: 3px none #ffffff;
+  border-radius: 8px;
   min-height: 64px;
   display: flex;
 }
 
 .page-input-1 {
-  flex-basis: 40%;
+  border: 3px none #ffffff;
+  border-radius: 8px 0 0 8px;
 }
+
+.page-input-1-basis {
+  flex-basis: 40%;
+  font-size: 18px;
+}
+
 .page-input-2 {
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.page-input-2-basis {
   flex-basis: 20%;
 }
+
 .page-input-3 {
+  border: 3px none #ffffff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.page-input-3-basis {
   flex-basis: 30%;
 }
-.page-button {
+
+.page-button-basis {
   flex-basis: 15%;
+}
+
+.page-button {
+  background-color: #3077c6;
+  border: 3px none #3077c6;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 24px;
 }
 
 .advantages {
