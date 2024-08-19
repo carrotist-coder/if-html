@@ -66,6 +66,32 @@ body {
   flex-basis: 50%;
 }
 
+.page {
+  padding: 196px 104px 0 104px;
+}
+
+.page-heading {
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 59px;
+}
+
+.page-textzone {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 100px;
+}
+
+.page-text {
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 21px;
+  flex-basis: 25%;
+}
+
 .advantages {
   max-width: 1440px;
   width: 100%;
