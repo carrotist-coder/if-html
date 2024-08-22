@@ -162,7 +162,7 @@ body {
 }
 
 .page-button-basis {
-  flex-basis: 15%;
+  flex-basis: 16%;
 }
 
 .page-button {
@@ -225,9 +225,6 @@ body {
   padding: 120px 272px 120px 104px;
   justify-content: space-between;
   align-content: space-between;
-}
-
-.footer-block {
 }
 
 .-footer-copyright {
