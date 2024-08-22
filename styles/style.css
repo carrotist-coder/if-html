@@ -28,12 +28,14 @@ body {
   justify-content: space-between;
   align-content: center;
   background: #10367c;
+  opacity: 90%;
   max-width: 1440px;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
   width: 100%;
-  padding: 0 104px 0 104px;
+  padding: 51px 104px 51px 104px;
 }
 
 .header-menu {
@@ -78,7 +80,7 @@ body {
 }
 
 .page {
-  padding: 196px 104px 0 104px;
+  padding: 293px 104px 0 104px;
 }
 
 .page-heading {
