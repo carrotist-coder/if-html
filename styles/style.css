@@ -47,6 +47,26 @@ body {
 
 .menu-stays {
   flex-basis: 30%;
+  position: relative;
+}
+
+.menu-stays::before,
+.menu-stays::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #f5bd41;
+  position: absolute;
+  bottom: -12px;
+  width: 30px;
+}
+
+.menu-stays::before {
+  left: 20px; /* Left line position */
+}
+
+.menu-stays::after {
+  right: 20px; /* Right line position */
 }
 
 .menu-attractions {
@@ -67,12 +87,6 @@ body {
   color: #ffffff;
   font-weight: 400;
   line-height: 28px;
-}
-
-.menu-line {
-  border: 2px solid #f5bd41;
-  width: 50px;
-  margin: 12px auto auto;
 }
 
 .header-logo {
