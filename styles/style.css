@@ -10,15 +10,18 @@ body {
   font-style: normal;
 }
 
-.header-wrapper {
-  position: relative;
+header {
+  min-width: 1440px;
+  width: 100vw;
+  height: 146px;
+  background: #10367c;
+  position: fixed;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background: #10367c;
   opacity: 90%;
   max-width: 1440px;
   position: fixed;
