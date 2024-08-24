@@ -10,15 +10,6 @@ body {
   font-style: normal;
 }
 
-.top-section {
-  min-height: 100vh;
-  max-width: 1440px;
-  background-image: url("./../images/triphouse-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
-
 .header-wrapper {
   position: relative;
 }
@@ -93,8 +84,20 @@ body {
   flex-basis: 50%;
 }
 
+.top-section {
+  min-height: 100vh;
+  height: 860px;
+  min-width: 100vw;
+  background-image: url("./../images/triphouse-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
 .page {
   padding: 293px 104px 0 104px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .page-heading {
