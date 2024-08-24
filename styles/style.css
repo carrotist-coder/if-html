@@ -10,6 +10,176 @@ body {
   font-style: normal;
 }
 
+.top-section {
+  min-height: 100vh;
+  max-width: 1440px;
+  background-image: url("./../images/triphouse-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background: #10367c;
+  opacity: 90%;
+  max-width: 1440px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  padding: 51px 104px 51px 104px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 30%;
+  align-items: center;
+}
+
+.menu-stays {
+  flex-basis: 30%;
+  position: relative;
+}
+
+.menu-stays::before,
+.menu-stays::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #f5bd41;
+  position: absolute;
+  bottom: -12px;
+  width: 30px;
+}
+
+.menu-stays::before {
+  left: 20px; /* Left line position */
+}
+
+.menu-stays::after {
+  right: 20px; /* Right line position */
+}
+
+.menu-attractions {
+  flex-basis: 60%;
+}
+
+.menu-night {
+  flex-basis: 20%;
+}
+
+.menu-account {
+  flex-basis: 10%;
+}
+
+.-menu-text {
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.header-logo {
+  flex-basis: 50%;
+}
+
+.page {
+  padding: 293px 104px 0 104px;
+}
+
+.page-heading {
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 59px;
+}
+
+.page-form {
+  width: 100%;
+}
+
+.page-textzone {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 24px;
+}
+
+.page-text {
+  text-align: left;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.page-inputs {
+  background-color: #ffffff;
+  border: 3px none #ffffff;
+  border-radius: 8px;
+  min-height: 64px;
+  display: flex;
+}
+
+.page-input-1 {
+  border: 3px none #ffffff;
+  border-radius: 8px 0 0 8px;
+}
+
+.page-input-1-basis {
+  flex-basis: 40%;
+  font-size: 18px;
+}
+
+.page-input-2 {
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.page-input-2-basis {
+  flex-basis: 20%;
+}
+
+.page-input-3 {
+  border: 3px none #ffffff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.page-input-3-basis {
+  flex-basis: 30%;
+}
+
+.page-button-basis {
+  flex-basis: 16%;
+}
+
+.page-button {
+  background-color: #3077c6;
+  border: 3px none #3077c6;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 24px;
+}
+
+.page-apps {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
 .advantages {
   max-width: 1440px;
   width: 100%;
@@ -55,9 +225,6 @@ body {
   padding: 120px 272px 120px 104px;
   justify-content: space-between;
   align-content: space-between;
-}
-
-.footer-block {
 }
 
 .-footer-copyright {
