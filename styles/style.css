@@ -238,6 +238,11 @@ header {
   margin-top: 48px;
 }
 
+.advantages-block__svg {
+  width: 100px;
+  height: 100px;
+}
+
 footer {
   width: 1440px;
   height: 625px;
