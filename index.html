@@ -9,144 +9,142 @@
   <body>
     <header>
       <div class="header-container">
-        <div class="header-logo">
-          <svg>
-            <use href="./images/sprite.svg#logo"></use>
-          </svg>
-        </div>
+        <svg class="header-container__logo">
+          <use href="./images/sprite.svg#logo"></use>
+        </svg>
         <div class="header-menu">
-          <div class="menu-stays -menu-text">Stays</div>
-          <div class="menu-attractions -menu-text">Attractions</div>
-          <div class="menu-night">
-            <svg>
-              <use href="./images/sprite.svg#night-icon"></use>
-            </svg>
+          <div class="header-menu__stays header-menu--text">Stays</div>
+          <div class="header-menu__attractions header-menu--text">
+            Attractions
           </div>
-          <div class="menu-account">
-            <svg>
-              <use href="./images/sprite.svg#account-icon"></use>
-            </svg>
-          </div>
+          <svg class="header-menu__night">
+            <use href="./images/sprite.svg#night-icon"></use>
+          </svg>
+          <svg class="header-menu__account">
+            <use href="./images/sprite.svg#account-icon"></use>
+          </svg>
         </div>
       </div>
     </header>
 
-    <div class="top-section">
-      <div class="page">
-        <div class="page-heading">Discover stays</div>
-        <div class="page-heading">to live, work or just relax</div>
+    <div class="top-section page">
+      <div class="page__heading">Discover stays</div>
+      <div class="page__heading">to live, work or just relax</div>
 
-        <form class="page-form">
-          <div class="page-textzone">
-            <label class="page-text page-input-1-basis" for="destination"
-              >Your destination or hotel name</label
-            >
-            <label class="page-text page-input-2-basis" for="date"
-              >Check-in — Check-out</label
-            >
-            <div class="page-text page-input-3-basis"></div>
-            <div class="page-text page-button"></div>
-          </div>
-          <div class="page-inputs">
-            <input
-              class="page-input-1 page-input-1-basis"
-              id="destination"
-              type="text"
-              name="destination"
-              value="New York"
-            />
-            <input
-              class="page-input-2 page-input-2-basis"
-              id="date"
-              type="date"
-              name="destination"
-              value="Tue 15 Sept — Sat 19 Sept"
-            />
-            <input
-              class="page-input-3 page-input-3-basis"
-              type="text"
-              name="description"
-              value="2 Adults — 0 Children — 1 Room"
-            />
-            <button class="page-button page-button-basis">Search</button>
-          </div>
-        </form>
-        <div class="page-apps">
-          <img
-            src="./images/logos/google-play-logo.png"
-            alt="Get it on Google Play button"
-          />
-          <img
-            src="./images/logos/app-store-logo.png"
-            alt="Get it on App Store button"
-          />
+      <form class="page-form">
+        <div class="page-textzone">
+          <label
+            class="page-form__label page-inputs__input-1--basis"
+            for="destination"
+            >Your destination or hotel name</label
+          >
+          <label class="page-form__label page-inputs__input-2--basis" for="date"
+            >Check-in — Check-out</label
+          >
+          <div class="page-form__label page-inputs__input-3--basis"></div>
+          <div class="page-form__label page-form__button"></div>
         </div>
+        <div class="page-inputs">
+          <input
+            class="page-inputs__input-1 page-inputs__input-1--basis"
+            id="destination"
+            type="text"
+            name="destination"
+            value="New York"
+          />
+          <input
+            class="page-inputs__input-2 page-inputs__input-2--basis"
+            id="date"
+            type="date"
+            name="destination"
+            value="Tue 15 Sept — Sat 19 Sept"
+          />
+          <input
+            class="page-inputs__input-3 page-inputs__input-3--basis"
+            type="text"
+            name="description"
+            value="2 Adults — 0 Children — 1 Room"
+          />
+          <button class="page-form__button page-form__button--basis">
+            Search
+          </button>
+        </div>
+      </form>
+      <div class="page-apps">
+        <img
+          src="./images/logos/google-play-logo.png"
+          alt="Get it on Google Play button"
+        />
+        <img
+          src="./images/logos/app-store-logo.png"
+          alt="Get it on App Store button"
+        />
       </div>
     </div>
 
-    <div class="advantages">
-      <div class="container">
-        <div class="heading">
-          <h1 class="block-heading">What do we offer</h1>
-          <hr class="block-line" />
+    <div class="advantages advantages-container">
+      <div class="advantages-heading">
+        <h1 class="advantages-heading__text">What do we offer</h1>
+        <hr class="advantages-heading__line" />
+      </div>
+      <div class="advantages-blocks">
+        <div class="advantages-block">
+          <svg>
+            <use href="./images/sprite.svg#headset-icon"></use>
+          </svg>
+          <p class="advantages-block__text">Support 24/7</p>
         </div>
-        <div class="blocks">
-          <div class="block">
-            <svg>
-              <use href="./images/sprite.svg#headset-icon"></use>
-            </svg>
-            <p class="block-text">Support 24/7</p>
-          </div>
-          <div class="block">
-            <svg>
-              <use href="./images/sprite.svg#forum-icon"></use>
-            </svg>
-            <p class="block-text">Communicate directly</p>
-          </div>
-          <div class="block">
-            <svg>
-              <use href="./images/sprite.svg#devices-icon"></use>
-            </svg>
-            <p class="block-text">Book online</p>
-          </div>
-          <div class="block">
-            <svg>
-              <use href="./images/sprite.svg#thumb-up-icon"></use>
-            </svg>
-            <p class="block-text">Real guest reviews</p>
-          </div>
+        <div class="advantages-block">
+          <svg>
+            <use href="./images/sprite.svg#forum-icon"></use>
+          </svg>
+          <p class="advantages-block__text">Communicate directly</p>
+        </div>
+        <div class="advantages-block">
+          <svg>
+            <use href="./images/sprite.svg#devices-icon"></use>
+          </svg>
+          <p class="advantages-block__text">Book online</p>
+        </div>
+        <div class="advantages-block">
+          <svg>
+            <use href="./images/sprite.svg#thumb-up-icon"></use>
+          </svg>
+          <p class="advantages-block__text">Real guest reviews</p>
         </div>
       </div>
     </div>
-    <div class="footer">
+    <footer>
       <div class="footer-container">
-        <div class="footer-block -footer-copyright">
-          <p class="footer-text footer-bold">About</p>
-          <p class="footer-text">How Triphouse works</p>
-          <p class="footer-text">Careers</p>
-          <p class="footer-text">Privacy</p>
-          <p class="footer-text">Terms</p>
+        <div class="footer-block footer-block--above-copyright">
+          <p class="footer-block__text footer-block__text--bold">About</p>
+          <p class="footer-block__text">How Triphouse works</p>
+          <p class="footer-block__text">Careers</p>
+          <p class="footer-block__text">Privacy</p>
+          <p class="footer-block__text">Terms</p>
         </div>
         <div class="footer-block">
-          <p class="footer-text footer-bold">Property types</p>
-          <p class="footer-text">Guest houses</p>
-          <p class="footer-text">Hotels</p>
-          <p class="footer-text">Apartments</p>
-          <p class="footer-text">Villas</p>
-          <p class="footer-text">Holiday homes</p>
-          <p class="footer-text">Hostels</p>
+          <p class="footer-block__text footer-block__text--bold">
+            Property types
+          </p>
+          <p class="footer-block__text">Guest houses</p>
+          <p class="footer-block__text">Hotels</p>
+          <p class="footer-block__text">Apartments</p>
+          <p class="footer-block__text">Villas</p>
+          <p class="footer-block__text">Holiday homes</p>
+          <p class="footer-block__text">Hostels</p>
         </div>
         <div class="footer-block">
-          <p class="footer-text footer-bold">Support</p>
-          <p class="footer-text">Contact Customer Service</p>
-          <p class="footer-text">FAQ</p>
+          <p class="footer-block__text footer-block__text--bold">Support</p>
+          <p class="footer-block__text">Contact Customer Service</p>
+          <p class="footer-block__text">FAQ</p>
         </div>
         <div class="footer-copyright">
-          <p class="text-copyright">
+          <p class="footer-copyright__text">
             &#169; 2022Triphouse, Inc. All rights reserved
           </p>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
