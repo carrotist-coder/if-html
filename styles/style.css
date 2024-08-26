@@ -10,6 +10,13 @@ body {
   font-style: normal;
 }
 
+.svg-sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
 header {
   min-width: 1440px;
   width: 100vw;
