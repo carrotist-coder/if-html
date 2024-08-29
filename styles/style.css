@@ -10,24 +10,25 @@ body {
   font-style: normal;
 }
 
-.top-section {
-  min-height: 100vh;
-  max-width: 1440px;
-  background-image: url("./../images/triphouse-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0 auto;
+.svg-sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
-.header-wrapper {
-  position: relative;
+header {
+  min-width: 1440px;
+  width: 100vw;
+  height: 146px;
+  background: #10367c;
+  position: fixed;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background: #10367c;
   opacity: 90%;
   max-width: 1440px;
   position: fixed;
@@ -43,15 +44,16 @@ body {
   justify-content: space-around;
   flex-basis: 30%;
   align-items: center;
+  gap: 24px;
 }
 
-.menu-stays {
-  flex-basis: 30%;
+.header-menu__stays {
+  flex-basis: 20%;
   position: relative;
 }
 
-.menu-stays::before,
-.menu-stays::after {
+.header-menu__stays::before,
+.header-menu__stays::after {
   content: "";
   display: block;
   height: 4px;
@@ -61,27 +63,31 @@ body {
   width: 30px;
 }
 
-.menu-stays::before {
+.header-menu__stays::before {
   left: 20px; /* Left line position */
 }
 
-.menu-stays::after {
+.header-menu__stays::after {
   right: 20px; /* Right line position */
 }
 
-.menu-attractions {
+.header-menu__attractions {
   flex-basis: 60%;
 }
 
-.menu-night {
+.header-menu__night {
+  width: 30px;
+  height: 30px;
   flex-basis: 20%;
 }
 
-.menu-account {
-  flex-basis: 10%;
+.header-menu__account {
+  width: 40px;
+  height: 40px;
+  flex-basis: 20%;
 }
 
-.-menu-text {
+.header-menu--text {
   text-align: center;
   font-size: 24px;
   color: #ffffff;
@@ -89,15 +95,28 @@ body {
   line-height: 28px;
 }
 
-.header-logo {
-  flex-basis: 50%;
+.header-container__logo {
+  height: 40px;
+  flex-basis: 20%;
+}
+
+.top-section {
+  min-height: 100vh;
+  height: 860px;
+  min-width: 100vw;
+  background-image: url("./../images/triphouse-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 .page {
   padding: 293px 104px 0 104px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-.page-heading {
+.page__heading {
   font-size: 50px;
   color: #ffffff;
   font-weight: 500;
@@ -114,7 +133,7 @@ body {
   padding-bottom: 24px;
 }
 
-.page-text {
+.page-form__label {
   text-align: left;
   font-size: 18px;
   color: #ffffff;
@@ -130,42 +149,42 @@ body {
   display: flex;
 }
 
-.page-input-1 {
+.page-inputs__input-1 {
   border: 3px none #ffffff;
   border-radius: 8px 0 0 8px;
 }
 
-.page-input-1-basis {
+.page-inputs__input-1--basis {
   flex-basis: 40%;
   font-size: 18px;
 }
 
-.page-input-2 {
+.page-inputs__input-2 {
   border: 3px solid #f5bd41;
   border-radius: 8px;
   font-size: 18px;
   text-align: center;
 }
 
-.page-input-2-basis {
+.page-inputs__input-2--basis {
   flex-basis: 20%;
 }
 
-.page-input-3 {
+.page-inputs__input-3 {
   border: 3px none #ffffff;
   font-size: 18px;
   text-align: center;
 }
 
-.page-input-3-basis {
+.page-inputs__input-3--basis {
   flex-basis: 30%;
 }
 
-.page-button-basis {
+.page-form__button--basis {
   flex-basis: 16%;
 }
 
-.page-button {
+.page-form__button {
   background-color: #3077c6;
   border: 3px none #3077c6;
   color: #ffffff;
@@ -180,6 +199,13 @@ body {
   gap: 16px;
 }
 
+.advantages-container {
+  width: 100%;
+  max-width: 1232px;
+  height: 100%;
+  margin: 0 104px;
+}
+
 .advantages {
   max-width: 1440px;
   width: 100%;
@@ -189,7 +215,7 @@ body {
   padding: 120px 0;
 }
 
-.block-heading {
+.advantages-heading__text {
   text-align: center;
   font-size: 40px;
   color: #383838;
@@ -198,13 +224,13 @@ body {
   margin-bottom: 20px;
 }
 
-.block-line {
+.advantages-heading__line {
   border: 2px solid #f5bd41;
   width: 100px;
   margin: auto;
 }
 
-.block-text {
+.advantages-block__text {
   color: #383838;
   font-size: 24px;
   font-weight: 400;
@@ -212,7 +238,12 @@ body {
   margin-top: 48px;
 }
 
-.footer {
+.advantages-block__svg {
+  width: 100px;
+  height: 100px;
+}
+
+footer {
   width: 1440px;
   height: 625px;
   background-color: #10367c;
@@ -227,18 +258,18 @@ body {
   align-content: space-between;
 }
 
-.-footer-copyright {
+.footer-block--above-copyright {
   margin-bottom: 158px;
 }
 
-.footer-text {
+.footer-block__text {
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
   margin-bottom: 24px;
 }
 
-.footer-bold {
+.footer-block__text--bold {
   font-weight: 500;
 }
 
@@ -246,30 +277,23 @@ body {
   width: 100%;
 }
 
-.text-copyright {
+.footer-copyright__text {
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
 }
 
-.container {
-  width: 100%;
-  max-width: 1232px;
-  height: 100%;
-  margin: 0 104px;
-}
-
-.heading {
+.advantages-heading {
   color: #383838;
   padding-bottom: 80px;
 }
 
-.block {
+.advantages-block {
   flex-basis: 25%;
   text-align: center;
 }
 
-.blocks {
+.advantages-blocks {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
