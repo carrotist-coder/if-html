@@ -384,7 +384,11 @@ footer {
   }
 
   .footer-container {
-    padding: 40px 67px;
+    padding: 0 67px 40px 67px;
+  }
+
+  .footer-block--above-copyright {
+    margin-bottom: 36px;
   }
 
   .footer-block__text {
