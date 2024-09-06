@@ -128,13 +128,11 @@ header {
 }
 
 .page-form {
-  width: 100%;
-}
-
-.page-textzone {
-  display: flex;
   padding-top: 100px;
-  padding-bottom: 24px;
+  display: grid;
+  grid-template-columns: 467px 259px 314px 192px;
+  grid-template-rows: repeat(2, 64px);
+  font-size: 18px;
 }
 
 .page-form__label {
@@ -143,24 +141,35 @@ header {
   color: #ffffff;
   font-weight: 400;
   line-height: 21px;
+  align-content: center;
+}
+
+.page-form__label-1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.page-form__label-2 {
+  grid-row: 1;
+  grid-column: 2 / 4;
 }
 
 .page-inputs {
   background-color: #ffffff;
   border: 3px none #ffffff;
   border-radius: 8px;
-  min-height: 64px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 467px 259px 314px 192px;
+  grid-template-rows: 64px;
+  grid-row: 2;
+  grid-column: 1 / span 4;
 }
 
 .page-inputs__input-1 {
   border: 3px none #ffffff;
   border-radius: 8px 0 0 8px;
-}
-
-.page-inputs__input-1--basis {
-  flex-basis: 40%;
-  font-size: 18px;
+  grid-row: 1;
+  grid-column: 1;
 }
 
 .page-inputs__input-2 {
@@ -168,24 +177,16 @@ header {
   border-radius: 8px;
   font-size: 18px;
   text-align: center;
-}
-
-.page-inputs__input-2--basis {
-  flex-basis: 20%;
+  grid-row: 1;
+  grid-column: 2;
 }
 
 .page-inputs__input-3 {
   border: 3px none #ffffff;
   font-size: 18px;
   text-align: center;
-}
-
-.page-inputs__input-3--basis {
-  flex-basis: 30%;
-}
-
-.page-form__button--basis {
-  flex-basis: 16%;
+  grid-row: 1;
+  grid-column: 3;
 }
 
 .page-form__button {
@@ -194,6 +195,8 @@ header {
   color: #ffffff;
   border-radius: 8px;
   font-size: 24px;
+  grid-row: 1;
+  grid-column: 4;
 }
 
 .page-apps {
