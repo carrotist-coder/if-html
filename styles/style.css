@@ -388,6 +388,19 @@ footer {
     flex-basis: 10%;
   }
 
+  .page {
+    padding: 88px 16px 0;
+  }
+
+  .page__heading {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .page-apps {
+    padding: 32px 0 40px;
+  }
+
   .advantages-container {
     margin: 0 auto;
     padding: 24px;
