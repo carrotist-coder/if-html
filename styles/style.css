@@ -91,6 +91,13 @@ header {
   flex-basis: 20%;
 }
 
+.header-menu__hamburger {
+  display: none;
+  width: 24px;
+  height: 16px;
+  flex-basis: 20%;
+}
+
 .header-menu--text {
   text-align: center;
   font-size: 24px;
@@ -111,7 +118,7 @@ header {
 }
 
 .page {
-  padding: 293px 104px 0 104px;
+  padding: 293px 104px 0;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -193,7 +200,7 @@ header {
 }
 
 .page-apps {
-  padding-top: 120px;
+  padding: 120px 0;
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -303,7 +310,6 @@ footer {
 .col-lg-1 {
   width: var(--col-width);
 }
-
 .col-lg-2 {
   width: calc(var(--col-width) * 2);
 }
@@ -338,7 +344,7 @@ footer {
   width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   /*Tablets*/
   .advantages-container {
     margin: 0 auto;
