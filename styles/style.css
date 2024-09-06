@@ -93,9 +93,6 @@ header {
 
 .header-menu__hamburger {
   display: none;
-  width: 24px;
-  height: 16px;
-  flex-basis: 20%;
 }
 
 .header-menu--text {
@@ -108,7 +105,7 @@ header {
 
 .header-container__logo {
   height: 40px;
-  flex-basis: 20%;
+  width: 205px;
 }
 
 .top-section {
@@ -346,6 +343,51 @@ footer {
 
 @media only screen and (max-width: 800px) {
   /*Tablets*/
+  header {
+    height: 48px;
+  }
+
+  .header-container {
+    padding: 12px 16px;
+  }
+
+  .header-container__logo {
+    height: 24px;
+    width: 120px;
+  }
+
+  .header-menu {
+    justify-content: space-evenly;
+    flex-basis: 30%;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .header-menu__stays {
+    display: none;
+  }
+
+  .header-menu__attractions {
+    display: none;
+  }
+
+  .header-menu__night {
+    width: 16px;
+    height: 16px;
+  }
+
+  .header-menu__account {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header-menu__hamburger {
+    display: initial;
+    width: 24px;
+    height: 16px;
+    flex-basis: 10%;
+  }
+
   .advantages-container {
     margin: 0 auto;
     padding: 24px;
