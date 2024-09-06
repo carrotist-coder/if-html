@@ -181,12 +181,32 @@ header {
   grid-column: 2;
 }
 
+.page-inputs__input-2-in {
+  display: none;
+}
+
+.page-inputs__input-2-out {
+  display: none;
+}
+
 .page-inputs__input-3 {
   border: 3px none #ffffff;
   font-size: 18px;
   text-align: center;
   grid-row: 1;
   grid-column: 3;
+}
+
+.page-inputs__input-3-adults {
+  display: none;
+}
+
+.page-inputs__input-3-children {
+  display: none;
+}
+
+.page-inputs__input-3-rooms {
+  display: none;
 }
 
 .page-form__button {
@@ -398,6 +418,85 @@ footer {
   .page__heading {
     font-size: 30px;
     line-height: 35px;
+  }
+
+  .page-form {
+    padding: 88px 16px 32px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    font-size: 15px;
+  }
+
+  .page-form__label-1 {
+    display: none;
+  }
+
+  .page-form__label-2 {
+    display: none;
+  }
+
+  .page-inputs__input-1 {
+    grid-row: 1;
+    grid-column: 1 / span 6;
+    height: 48px;
+    border: 8px solid #f5bd41;
+  }
+
+  .page-inputs {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 48px);
+    grid-row: 1;
+    grid-column: 1 / span 6;
+    border: 8px solid #f5bd41;
+  }
+
+  .page-inputs__input-2 {
+    display: none;
+  }
+
+  .page-inputs__input-2-in {
+    display: initial;
+    grid-row: 2;
+    grid-column: 1 / span 3;
+    border: 8px solid #f5bd41;
+  }
+
+  .page-inputs__input-2-out {
+    display: initial;
+    grid-row: 2;
+    grid-column: 4 / span 3;
+    border: 8px solid #f5bd41;
+  }
+
+  .page-inputs__input-3 {
+    font-size: 15px;
+    display: none;
+  }
+
+  .page-inputs__input-3-adults {
+    display: initial;
+    grid-row: 3;
+    grid-column: 1 / span 2;
+  }
+
+  .page-inputs__input-3-children {
+    display: initial;
+    grid-row: 3;
+    grid-column: 3 / span 2;
+  }
+
+  .page-inputs__input-3-rooms {
+    display: initial;
+    grid-row: 3;
+    grid-column: 5 / span 2;
+  }
+
+  .page-form__button {
+    font-size: 19px;
+    grid-row: 4;
+    grid-column: 1 / span 6;
+    border: 8px solid #f5bd41;
   }
 
   .page-apps {
