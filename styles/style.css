@@ -130,9 +130,10 @@ header {
 .page-form {
   padding-top: 100px;
   display: grid;
-  grid-template-columns: 467px 259px 314px 192px;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 64px);
   font-size: 18px;
+  width: 100%;
 }
 
 .page-form__label {
@@ -146,12 +147,12 @@ header {
 
 .page-form__label-1 {
   grid-row: 1;
-  grid-column: 1;
+  grid-column: 1 / span 4;
 }
 
 .page-form__label-2 {
   grid-row: 1;
-  grid-column: 2 / 4;
+  grid-column: 5 / span 3;
 }
 
 .page-inputs {
@@ -159,17 +160,17 @@ header {
   border: 3px none #ffffff;
   border-radius: 8px;
   display: grid;
-  grid-template-columns: 467px 259px 314px 192px;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 64px;
   grid-row: 2;
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 12;
 }
 
 .page-inputs__input-1 {
   border: 3px none #ffffff;
   border-radius: 8px 0 0 8px;
   grid-row: 1;
-  grid-column: 1;
+  grid-column: 1 / span 4;
 }
 
 .page-inputs__input-2 {
@@ -178,7 +179,7 @@ header {
   font-size: 18px;
   text-align: center;
   grid-row: 1;
-  grid-column: 2;
+  grid-column: 5 / span 2;
 }
 
 .page-inputs__input-2-in {
@@ -194,7 +195,7 @@ header {
   font-size: 18px;
   text-align: center;
   grid-row: 1;
-  grid-column: 3;
+  grid-column: 7 / span 4;
 }
 
 .page-inputs__input-3-adults {
@@ -216,7 +217,7 @@ header {
   border-radius: 8px;
   font-size: 24px;
   grid-row: 1;
-  grid-column: 4;
+  grid-column: 11 / span 2;
 }
 
 .page-apps {
@@ -364,7 +365,7 @@ footer {
   width: 100%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   /*Tablets*/
   header {
     height: 48px;
