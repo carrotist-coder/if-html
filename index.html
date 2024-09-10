@@ -34,81 +34,75 @@
     <div class="top-section page">
       <div class="page__heading">Discover stays</div>
       <div class="page__heading">to live, work or just relax</div>
-      <form class="page-form">
-        <label class="page-form__label page-form__label-1" for="destination"
+      <form class="search-form">
+        <label class="search-form__label search-form__label-1" for="destination"
           >Your destination or hotel name</label
         >
-        <label class="page-form__label page-form__label-2" for="date"
+        <label class="search-form__label search-form__label-2" for="date"
           >Check-in — Check-out</label
         >
-        <div class="page-inputs">
+        <div class="search-inputs">
           <input
-            class="page-inputs__input-1"
+            class="search-inputs__input-1"
             id="destination"
             type="text"
             name="destination"
             value="New York"
           />
-          <div class="page-input-md">
-            <label
-              class="page-form__label-md page-form__label-md-2-in"
-              for="date-in"
-              >Check-in</label
-            >
+          <div class="search-input-md search-input-md-2-in">
+            <label class="search-form__label-md" for="date-in">Check-in</label>
+            <input
+              class="search-inputs__input-md"
+              id="date-in"
+              type="date"
+              name="date-in"
+              value="Tue 15 Sept 2020"
+            />
           </div>
-          <input
-            class="page-inputs__input-2-in"
-            id="date-in"
-            type="date"
-            name="date-in"
-            value="Tue 15 Sept 2020"
-          />
-          <div class="page-input-md">
-            <label
-              class="page-form__label-md page-form__label-md-2-out"
-              for="date-out"
+          <div class="search-input-md search-input-md-2-out">
+            <label class="search-form__label-md" for="date-out"
               >Check-out</label
             >
+            <input
+              class="search-inputs__input-md"
+              id="date-out"
+              type="date"
+              name="date-out"
+              value="Sat 19 Sept 2020"
+            />
           </div>
           <input
-            class="page-inputs__input-2-out"
-            id="date-out"
-            type="date"
-            name="date-out"
-            value="Sat 19 Sept 2020"
-          />
-          <input
-            class="page-inputs__input-2"
+            class="search-inputs__input-2"
             id="date"
             type="date"
             name="date"
             value="Tue 15 Sept — Sat 19 Sept"
           />
           <input
-            class="page-inputs__input-3 page-inputs__input-3-adults"
+            class="search-inputs__input-3 search-inputs__input-3-adults"
             type="number"
             name="adults"
             value="2"
           />
           <input
-            class="page-inputs__input-3 page-inputs__input-3-children"
+            class="search-inputs__input-3 search-inputs__input-3-children"
             type="number"
             name="children"
             value="0"
           />
           <input
-            class="page-inputs__input-3 page-inputs__input-3-rooms"
+            class="search-inputs__input-3 search-inputs__input-3-rooms"
             type="number"
             name="rooms"
             value="1"
           />
           <input
-            class="page-inputs__input-3"
+            class="search-inputs__input-3"
             type="text"
             name="description"
             value="2 Adults — 0 Children — 1 Room"
           />
-          <button class="page-form__button">Search</button>
+          <button class="search-form__button">Search</button>
         </div>
       </form>
       <div class="page-apps">
