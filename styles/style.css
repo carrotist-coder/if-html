@@ -453,7 +453,7 @@ footer {
     position: relative;
     display: flex;
     justify-content: stretch;
-    grid-auto-flow: row;
+    width: 100%;
   }
 
   .search-form__label-md {
@@ -505,20 +505,22 @@ footer {
     display: none;
   }
 
-  .search-inputs__input-3-adults {
+  .search-inputs__input-md-3 {
     display: initial;
+    text-align: center;
+  }
+
+  .search-inputs__input-3-adults {
     grid-row: 3;
     grid-column: 1 / span 2;
   }
 
   .search-inputs__input-3-children {
-    display: initial;
     grid-row: 3;
     grid-column: 3 / span 2;
   }
 
   .search-inputs__input-3-rooms {
-    display: initial;
     grid-row: 3;
     grid-column: 5 / span 2;
   }
