@@ -469,8 +469,9 @@ footer {
     grid-template-rows: repeat(4, var(--form-row-height));
     grid-row: 1;
     grid-column: 1 / span 6;
-    border: 4px solid #f5bd41;
-    /*gap: 4px;*/
+    background-color: #f5bd41;
+    border: 8px solid #f5bd41;
+    gap: 8px;
   }
 
   .search-inputs__input-1 {
