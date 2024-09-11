@@ -43,13 +43,18 @@
           >Check-in — Check-out</label
         >
         <div class="search-inputs">
-          <input
-            class="search-inputs__input-1"
-            id="destination"
-            type="text"
-            name="destination"
-            value="New York"
-          />
+          <div class="search-inputs__input-1 search-inputs__input-1--relative">
+            <svg class="search-inputs__search-icon">
+              <use href="./images/sprite.svg#search-icon"></use>
+            </svg>
+            <input
+              class="search-inputs__input-md-1"
+              id="destination"
+              type="text"
+              name="destination"
+              value="New York"
+            />
+          </div>
           <div class="search-input-md search-input-md-2-in">
             <label class="search-form__label-md" for="date-in">Check-in</label>
             <input

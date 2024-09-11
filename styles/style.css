@@ -159,6 +159,10 @@ header {
   display: none;
 }
 
+.search-inputs__search-icon {
+  display: none;
+}
+
 .search-inputs {
   background-color: #ffffff;
   border: 3px none #ffffff;
@@ -175,6 +179,12 @@ header {
   border-radius: 8px 0 0 8px;
   grid-row: 1;
   grid-column: 1 / span 4;
+}
+
+.search-inputs__input-md-1 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .search-inputs__input-2 {
@@ -477,6 +487,19 @@ footer {
   .search-inputs__input-1 {
     grid-row: 1;
     grid-column: 1 / span 6;
+  }
+
+  .search-inputs__search-icon {
+    display: initial;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 12px;
+    top: 16px;
+  }
+
+  .search-inputs__input-1--relative {
+    position: relative;
   }
 
   .search-inputs__input-2 {
