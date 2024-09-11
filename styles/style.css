@@ -27,6 +27,7 @@ header {
   height: 146px;
   background: #10367c;
   position: fixed;
+  z-index: 1;
 }
 
 .header-container {
