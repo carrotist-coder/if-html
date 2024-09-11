@@ -533,6 +533,7 @@ footer {
   .search-inputs__input-md-3 {
     display: initial;
     text-align: center;
+    width: 100%;
   }
 
   .search-inputs__input-3-adults {
