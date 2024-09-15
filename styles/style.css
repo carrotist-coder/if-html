@@ -59,7 +59,6 @@ header {
 
 .header-menu__stays:hover::before {
   content: "";
-  display: block;
   height: 4px;
   background-color: #f5bd41;
   position: absolute;
@@ -76,7 +75,6 @@ header {
 
 .header-menu__attractions:hover::before {
   content: "";
-  display: block;
   height: 4px;
   background-color: #f5bd41;
   position: absolute;
@@ -271,6 +269,18 @@ header {
   font-weight: 500;
   line-height: 47px;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.advantages-heading__text::before {
+  content: "";
+  height: 4px;
+  background-color: #f5bd41;
+  position: absolute;
+  bottom: -20px;
+  width: 100px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .advantages-heading__line {
