@@ -57,27 +57,33 @@ header {
   position: relative;
 }
 
-.header-menu__stays::before,
-.header-menu__stays::after {
+.header-menu__stays:hover::before {
   content: "";
   display: block;
   height: 4px;
   background-color: #f5bd41;
   position: absolute;
   bottom: -12px;
-  width: 30px;
-}
-
-.header-menu__stays::before {
-  left: 20px; /* Left line position */
-}
-
-.header-menu__stays::after {
-  right: 20px; /* Right line position */
+  width: 50px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .header-menu__attractions {
   flex-basis: 60%;
+  position: relative;
+}
+
+.header-menu__attractions:hover::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #f5bd41;
+  position: absolute;
+  bottom: -12px;
+  width: 50px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .header-menu__night {
