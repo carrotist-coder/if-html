@@ -57,7 +57,7 @@ header {
   position: relative;
 }
 
-.header-menu__stays:hover::before {
+.header-menu__stays::before {
   content: "";
   height: 4px;
   background-color: #f5bd41;
@@ -66,6 +66,12 @@ header {
   width: 50px;
   left: 50%;
   transform: translate(-50%);
+  opacity: 0;
+  transition: opacity 100ms ease-in-out 10ms;
+}
+
+.header-menu__stays:hover::before {
+  opacity: 1;
 }
 
 .header-menu__attractions {
@@ -73,7 +79,7 @@ header {
   position: relative;
 }
 
-.header-menu__attractions:hover::before {
+.header-menu__attractions::before {
   content: "";
   height: 4px;
   background-color: #f5bd41;
@@ -82,6 +88,12 @@ header {
   width: 50px;
   left: 50%;
   transform: translate(-50%);
+  opacity: 0;
+  transition: opacity 100ms ease-in-out 10ms;
+}
+
+.header-menu__attractions:hover::before {
+  opacity: 1;
 }
 
 .header-menu__night {
