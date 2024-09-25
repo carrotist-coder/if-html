@@ -382,6 +382,7 @@ header {
   background-color: #f3f3f4;
   border-radius: 50%;
   position: relative;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .homes-guests-arrow-button__icon {
@@ -489,6 +490,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0%);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .destinations-arrow-button__icon {
