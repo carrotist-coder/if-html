@@ -537,6 +537,15 @@ header {
   margin: 0 auto;
   padding: 24px 24px 57px;
   background-color: #eaf0f9;
+  position: relative;
+}
+
+.sign-up__close-icon {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 24px;
+  right: 24px;
 }
 
 .sign-up-user-icon {
