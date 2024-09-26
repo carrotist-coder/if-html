@@ -535,7 +535,7 @@ header {
   max-width: 1232px;
   width: 100%;
   margin: 0 auto;
-  padding: 24px 24px 57px;
+  padding: 52px 0;
   background-color: #eaf0f9;
   position: relative;
 }
@@ -550,32 +550,34 @@ header {
 
 .sign-up-user-icon {
   position: relative;
-  height: 86px;
-  width: 86px;
 }
 
 .sign-up-user-icon__icon {
   position: absolute;
   width: 86px;
   height: 86px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 24px;
+  transform: translate(0, 15px);
 }
 
-.sign-up-title {
+.sign-up-content {
+  width: 100%;
+  padding-left: 134px;
+}
+
+.sign-up-content-title {
   color: #383838;
   padding-bottom: 21px;
 }
 
-.sign-up-title__text {
+.sign-up-content-title__text {
   font-size: 24px;
   color: #383838;
   font-weight: 500;
   line-height: 47px;
 }
 
-.sign-up__button {
+.sign-up-content__button {
   height: 48px;
   max-width: 128px;
   color: #3077c6;
