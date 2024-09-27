@@ -569,6 +569,10 @@ header {
   padding-left: 134px;
 }
 
+.sign-up-content-title__text--md {
+  display: none;
+}
+
 .sign-up-content-title {
   color: #383838;
   padding-bottom: 21px;
@@ -592,6 +596,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.sign-up-logo-icon {
+  display: none;
+}
+
+.sign-up-content__install {
+  display: none;
 }
 
 footer {
@@ -1044,6 +1056,65 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  .sign-up {
+    padding: 24px 16px;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+  }
+
+  .sign-up__close-icon {
+    position: initial;
+    width: 16px;
+    height: 16px;
+    margin: auto 0;
+    flex-basis: 10%;
+  }
+
+  .sign-up-user-icon {
+    display: none;
+  }
+
+  .sign-up-content {
+    display: none;
+    padding: 0;
+  }
+
+  .sign-up-content-title__text--md {
+    display: initial;
+    color: #383838;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 400;
+    flex-basis: 60%;
+    line-height: 14px;
+  }
+
+  .sign-up-content__button {
+    display: none;
+  }
+
+  .sign-up-logo-icon {
+    display: initial;
+    width: 58px;
+    height: 58px;
+    flex-basis: 10%;
+  }
+  .sign-up-logo-icon__icon {
+    width: 58px;
+    height: 58px;
+  }
+
+  .sign-up-content__install {
+    display: initial;
+    font-size: 14px;
+    color: #3077c6;
+    font-weight: 500;
+    flex-basis: 10%;
   }
 
   .footer-container {
