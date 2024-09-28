@@ -32,116 +32,118 @@
     </header>
 
     <main>
-      <section class="top-section page">
-        <div class="page__heading">Discover stays</div>
-        <div class="page__heading">to live, work or just relax</div>
+      <section class="top-section">
+        <div class="page">
+          <div class="page__heading">Discover stays</div>
+          <div class="page__heading">to live, work or just relax</div>
 
-        <form class="search-form">
-          <label
-            class="search-form__label search-form__label-1"
-            for="destination"
-            >Your destination or hotel name</label
-          >
-          <label class="search-form__label search-form__label-2" for="date"
-            >Check-in — Check-out</label
-          >
-          <div class="search-inputs">
-            <div
-              class="search-inputs__input-1 search-inputs__input-1--relative"
+          <form class="search-form">
+            <label
+              class="search-form__label search-form__label-1"
+              for="destination"
+              >Your destination or hotel name</label
             >
-              <svg class="search-inputs__search-icon">
-                <use href="./images/sprite.svg#search-icon"></use>
-              </svg>
-              <input
-                class="search-inputs__input-md-1"
-                id="destination"
-                type="text"
-                name="destination"
-                value="New York"
-              />
-            </div>
-            <div class="search-input-md search-input-md-2-in">
-              <label class="search-form__label-md" for="date-in"
-                >Check-in</label
+            <label class="search-form__label search-form__label-2" for="date"
+              >Check-in — Check-out</label
+            >
+            <div class="search-inputs">
+              <div
+                class="search-inputs__input-1 search-inputs__input-1--relative"
               >
+                <svg class="search-inputs__search-icon">
+                  <use href="./images/sprite.svg#search-icon"></use>
+                </svg>
+                <input
+                  class="search-inputs__input-md-1"
+                  id="destination"
+                  type="text"
+                  name="destination"
+                  value="New York"
+                />
+              </div>
+              <div class="search-input-md search-input-md-2-in">
+                <label class="search-form__label-md" for="date-in"
+                  >Check-in</label
+                >
+                <input
+                  class="search-inputs__input-md"
+                  id="date-in"
+                  type="date"
+                  name="date-in"
+                  value="Tue 15 Sept 2020"
+                />
+              </div>
+              <div class="search-input-md search-input-md-2-out">
+                <label class="search-form__label-md" for="date-out"
+                  >Check-out</label
+                >
+                <input
+                  class="search-inputs__input-md"
+                  id="date-out"
+                  type="date"
+                  name="date-out"
+                  value="Sat 19 Sept 2020"
+                />
+              </div>
               <input
-                class="search-inputs__input-md"
-                id="date-in"
+                class="search-inputs__input-2"
+                id="date"
                 type="date"
-                name="date-in"
-                value="Tue 15 Sept 2020"
+                name="date"
+                value="Tue 15 Sept — Sat 19 Sept"
               />
-            </div>
-            <div class="search-input-md search-input-md-2-out">
-              <label class="search-form__label-md" for="date-out"
-                >Check-out</label
-              >
-              <input
-                class="search-inputs__input-md"
-                id="date-out"
-                type="date"
-                name="date-out"
-                value="Sat 19 Sept 2020"
-              />
-            </div>
-            <input
-              class="search-inputs__input-2"
-              id="date"
-              type="date"
-              name="date"
-              value="Tue 15 Sept — Sat 19 Sept"
-            />
-            <div class="search-input-md search-inputs__input-3-adults">
-              <label class="search-form__label-md" for="adults">Adults</label>
-              <input
-                class="search-inputs__input-3 search-inputs__input-md-3 search-inputs__input-md"
-                id="adults"
-                type="number"
-                name="adults"
-                value="2"
-              />
-            </div>
-            <div class="search-input-md search-inputs__input-3-children">
-              <label class="search-form__label-md" for="children"
-                >Children</label
-              >
-              <input
-                class="search-inputs__input-3 search-inputs__input-md-3 search-inputs__input-md"
-                id="children"
-                type="number"
-                name="children"
-                value="0"
-              />
-            </div>
-            <div class="search-input-md search-inputs__input-3-rooms">
-              <label class="search-form__label-md" for="rooms">Rooms</label>
-              <input
-                class="search-inputs__input-3 search-inputs__input-md-3 search-inputs__input-md"
-                id="rooms"
-                type="number"
-                name="rooms"
-                value="1"
-              />
-            </div>
+              <div class="search-input-md search-inputs__input-3-adults">
+                <label class="search-form__label-md" for="adults">Adults</label>
+                <input
+                  class="search-inputs__input-3 search-inputs__input-md-3 search-inputs__input-md"
+                  id="adults"
+                  type="number"
+                  name="adults"
+                  value="2"
+                />
+              </div>
+              <div class="search-input-md search-inputs__input-3-children">
+                <label class="search-form__label-md" for="children"
+                  >Children</label
+                >
+                <input
+                  class="search-inputs__input-3 search-inputs__input-md-3 search-inputs__input-md"
+                  id="children"
+                  type="number"
+                  name="children"
+                  value="0"
+                />
+              </div>
+              <div class="search-input-md search-inputs__input-3-rooms">
+                <label class="search-form__label-md" for="rooms">Rooms</label>
+                <input
+                  class="search-inputs__input-3 search-inputs__input-md-3 search-inputs__input-md"
+                  id="rooms"
+                  type="number"
+                  name="rooms"
+                  value="1"
+                />
+              </div>
 
-            <input
-              class="search-inputs__input-3"
-              type="text"
-              name="description"
-              value="2 Adults — 0 Children — 1 Room"
+              <input
+                class="search-inputs__input-3"
+                type="text"
+                name="description"
+                value="2 Adults — 0 Children — 1 Room"
+              />
+              <button class="search-form__button">Search</button>
+            </div>
+          </form>
+          <div class="page-apps">
+            <img
+              src="./images/icons/google-play-logo.png"
+              alt="Get it on Google Play button"
             />
-            <button class="search-form__button">Search</button>
+            <img
+              src="./images/icons/app-store-logo.png"
+              alt="Get it on App Store button"
+            />
           </div>
-        </form>
-        <div class="page-apps">
-          <img
-            src="./images/icons/google-play-logo.png"
-            alt="Get it on Google Play button"
-          />
-          <img
-            src="./images/icons/app-store-logo.png"
-            alt="Get it on App Store button"
-          />
         </div>
       </section>
 

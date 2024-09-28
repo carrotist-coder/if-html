@@ -129,6 +129,7 @@ header {
   background-image: url("./../images/triphouse-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  min-width: 1440px;
 }
 
 .page {
