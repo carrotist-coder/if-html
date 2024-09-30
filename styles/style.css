@@ -318,10 +318,15 @@ header {
   height: 100px;
 }
 
+.homes-guests-container {
+  min-width: 1440px;
+  background-color: #eaf0f9;
+}
+
 .homes-guests {
   max-width: 1440px;
   width: 100%;
-  background-color: #eaf0f9;
+
   margin: 0 auto;
   padding: 120px 104px;
 }
@@ -607,10 +612,8 @@ header {
 }
 
 footer {
-  max-width: 1440px;
-  width: 100%;
+  min-width: 1440px;
   background-color: #10367c;
-  margin: 0 auto;
 }
 
 .footer-container {
@@ -619,6 +622,9 @@ footer {
   padding: 120px 272px 120px 104px;
   justify-content: space-between;
   align-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .footer-block--above-copyright {
