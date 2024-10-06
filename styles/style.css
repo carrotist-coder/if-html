@@ -319,14 +319,12 @@ header {
 }
 
 .homes-guests-container {
-  min-width: 1440px;
   background-color: #eaf0f9;
 }
 
 .homes-guests {
   max-width: 1440px;
   width: 100%;
-
   margin: 0 auto;
   padding: 120px 104px;
 }
@@ -612,7 +610,6 @@ header {
 }
 
 footer {
-  min-width: 1440px;
   background-color: #10367c;
 }
 
