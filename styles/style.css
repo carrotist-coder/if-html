@@ -609,6 +609,145 @@ header {
   display: none;
 }
 
+.reviews {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 104px;
+}
+
+.reviews-heading {
+  color: #383838;
+  padding-bottom: 104px;
+}
+
+.reviews-heading__text {
+  text-align: center;
+  font-size: 40px;
+  color: #383838;
+  font-weight: 500;
+  line-height: 47px;
+}
+
+.reviews-block {
+  flex-basis: 33%;
+  max-width: 400px;
+  background-color: #eaf0f9;
+  position: relative;
+}
+
+.reviews-block img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.reviews-block-price {
+  height: 48px;
+  width: 100%;
+  background-color: #383838;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.reviews-block-price__text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-left: 24px;
+}
+
+.reviews-block-content {
+  padding: 24px 24px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews-block-content__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-block figcaption p {
+  margin-top: 16px;
+  text-align: left;
+  font-size: 18px;
+  color: #3077c6;
+}
+
+.reviews-block figcaption p:first-of-type {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.reviews-block-score {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.reviews-block-score__score {
+  width: 48px;
+  height: 32px;
+  background-color: #10367c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.reviews-block-score__reviews {
+  color: #bfbfbf;
+  font-size: 14px;
+}
+
+.reviews-block-comment {
+  padding: 24px 24px;
+}
+
+.reviews-block-comment-user {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.reviews-block-comment-user__icon {
+  height: 65px;
+  width: 65px;
+}
+
+.reviews-block-comment-user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  font-size: 18px;
+}
+
+.reviews-block-comment-user-info__name {
+  color: #383838;
+}
+
+.reviews-block-comment-user-info__destination {
+  color: #bfbfbf;
+}
+
+.reviews-block-comment-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
 footer {
   background-color: #10367c;
 }
