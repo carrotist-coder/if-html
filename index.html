@@ -32,116 +32,118 @@
     </header>
 
     <main>
-      <section class="top-section page">
-        <div class="page__heading">Discover stays</div>
-        <div class="page__heading">to live, work or just relax</div>
+      <section class="top-section">
+        <div class="page">
+          <div class="page__heading">Discover stays</div>
+          <div class="page__heading">to live, work or just relax</div>
 
-        <form class="search-form">
-          <label
-            class="search-form__label search-form__label-1"
-            for="destination"
-            >Your destination or hotel name</label
-          >
-          <label class="search-form__label search-form__label-2" for="date"
-            >Check-in — Check-out</label
-          >
-          <div class="search-inputs">
-            <div
-              class="search-inputs__input-1 search-inputs__input-1--relative"
+          <form class="search-form">
+            <label
+              class="search-form__label search-form__label-1"
+              for="destination"
+              >Your destination or hotel name</label
             >
-              <svg class="search-inputs__search-icon">
-                <use href="./images/sprite.svg#search-icon"></use>
-              </svg>
-              <input
-                class="search-inputs__input-md-1"
-                id="destination"
-                type="text"
-                name="destination"
-                value="New York"
-              />
-            </div>
-            <div class="search-input-md search-input-md-2-in">
-              <label class="search-form__label-md" for="date-in"
-                >Check-in</label
+            <label class="search-form__label search-form__label-2" for="date"
+              >Check-in — Check-out</label
+            >
+            <div class="search-inputs">
+              <div
+                class="search-inputs__input-1 search-inputs__input-1--relative"
               >
+                <svg class="search-inputs__search-icon">
+                  <use href="./images/sprite.svg#search-icon"></use>
+                </svg>
+                <input
+                  class="search-inputs__input-md-1"
+                  id="destination"
+                  type="text"
+                  name="destination"
+                  value="New York"
+                />
+              </div>
+              <div class="search-input-md search-input-md-2-in">
+                <label class="search-form__label-md" for="date-in"
+                  >Check-in</label
+                >
+                <input
+                  class="search-inputs__input-md"
+                  id="date-in"
+                  type="date"
+                  name="date-in"
+                  value="Tue 15 Sept 2020"
+                />
+              </div>
+              <div class="search-input-md search-input-md-2-out">
+                <label class="search-form__label-md" for="date-out"
+                  >Check-out</label
+                >
+                <input
+                  class="search-inputs__input-md"
+                  id="date-out"
+                  type="date"
+                  name="date-out"
+                  value="Sat 19 Sept 2020"
+                />
+              </div>
               <input
-                class="search-inputs__input-md"
-                id="date-in"
+                class="search-inputs__input-2"
+                id="date"
                 type="date"
-                name="date-in"
-                value="Tue 15 Sept 2020"
+                name="date"
+                value="Tue 15 Sept — Sat 19 Sept"
               />
-            </div>
-            <div class="search-input-md search-input-md-2-out">
-              <label class="search-form__label-md" for="date-out"
-                >Check-out</label
-              >
-              <input
-                class="search-inputs__input-md"
-                id="date-out"
-                type="date"
-                name="date-out"
-                value="Sat 19 Sept 2020"
-              />
-            </div>
-            <input
-              class="search-inputs__input-2"
-              id="date"
-              type="date"
-              name="date"
-              value="Tue 15 Sept — Sat 19 Sept"
-            />
-            <div class="search-input-md search-inputs__input-3-adults">
-              <label class="search-form__label-md" for="adults">Adults</label>
-              <input
-                class="search-inputs__input-3 search-inputs__input-md-3 search-inputs__input-md"
-                id="adults"
-                type="number"
-                name="adults"
-                value="2"
-              />
-            </div>
-            <div class="search-input-md search-inputs__input-3-children">
-              <label class="search-form__label-md" for="children"
-                >Children</label
-              >
-              <input
-                class="search-inputs__input-3 search-inputs__input-md-3 search-inputs__input-md"
-                id="children"
-                type="number"
-                name="children"
-                value="0"
-              />
-            </div>
-            <div class="search-input-md search-inputs__input-3-rooms">
-              <label class="search-form__label-md" for="rooms">Rooms</label>
-              <input
-                class="search-inputs__input-3 search-inputs__input-md-3 search-inputs__input-md"
-                id="rooms"
-                type="number"
-                name="rooms"
-                value="1"
-              />
-            </div>
+              <div class="search-input-md search-inputs__input-3-adults">
+                <label class="search-form__label-md" for="adults">Adults</label>
+                <input
+                  class="search-inputs__input-3 search-inputs__input-md-3 search-inputs__input-md"
+                  id="adults"
+                  type="number"
+                  name="adults"
+                  value="2"
+                />
+              </div>
+              <div class="search-input-md search-inputs__input-3-children">
+                <label class="search-form__label-md" for="children"
+                  >Children</label
+                >
+                <input
+                  class="search-inputs__input-3 search-inputs__input-md-3 search-inputs__input-md"
+                  id="children"
+                  type="number"
+                  name="children"
+                  value="0"
+                />
+              </div>
+              <div class="search-input-md search-inputs__input-3-rooms">
+                <label class="search-form__label-md" for="rooms">Rooms</label>
+                <input
+                  class="search-inputs__input-3 search-inputs__input-md-3 search-inputs__input-md"
+                  id="rooms"
+                  type="number"
+                  name="rooms"
+                  value="1"
+                />
+              </div>
 
-            <input
-              class="search-inputs__input-3"
-              type="text"
-              name="description"
-              value="2 Adults — 0 Children — 1 Room"
+              <input
+                class="search-inputs__input-3"
+                type="text"
+                name="description"
+                value="2 Adults — 0 Children — 1 Room"
+              />
+              <button class="search-form__button">Search</button>
+            </div>
+          </form>
+          <div class="page-apps">
+            <img
+              src="./images/icons/google-play-logo.png"
+              alt="Get it on Google Play button"
             />
-            <button class="search-form__button">Search</button>
+            <img
+              src="./images/icons/app-store-logo.png"
+              alt="Get it on App Store button"
+            />
           </div>
-        </form>
-        <div class="page-apps">
-          <img
-            src="./images/icons/google-play-logo.png"
-            alt="Get it on Google Play button"
-          />
-          <img
-            src="./images/icons/app-store-logo.png"
-            alt="Get it on App Store button"
-          />
         </div>
       </section>
 
@@ -177,67 +179,75 @@
         </div>
       </section>
 
-      <section class="homes-guests">
-        <div class="homes-guests-heading">
-          <h1 class="homes-guests-heading__text">Homes guests loves</h1>
-        </div>
-        <div class="blocks">
-          <div class="homes-guests-block">
-            <figure>
-              <img src="./images/hotel1.png" alt="Hotel Leopold picture" />
-              <figcaption>
-                <p>Hotel Leopold</p>
-                <p>Saint Petersburg, Russia</p>
-              </figcaption>
-            </figure>
+      <div class="homes-guests-container">
+        <section class="homes-guests">
+          <div class="homes-guests-heading">
+            <h1 class="homes-guests-heading__text">Homes guests loves</h1>
           </div>
-          <div class="homes-guests-block">
-            <figure>
-              <img src="./images/hotel2.png" alt="Apartment Sunshine picture" />
-              <figcaption>
-                <p>Apartment Sunshine</p>
-                <p>Santa Cruz de Tenerife, Spain</p>
-              </figcaption>
-            </figure>
-            <div class="homes-guests-arrow-button--sm">
-              <div class="homes-guests-arrow-button__circle"></div>
-              <svg class="homes-guests-arrow-button__icon">
-                <use href="./images/sprite.svg#arrow-icon"></use>
-              </svg>
+          <div class="blocks">
+            <div class="homes-guests-block">
+              <figure>
+                <img src="./images/hotel1.png" alt="Hotel Leopold picture" />
+                <figcaption>
+                  <p>Hotel Leopold</p>
+                  <p>Saint Petersburg, Russia</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="homes-guests-block">
+              <figure>
+                <img
+                  src="./images/hotel2.png"
+                  alt="Apartment Sunshine picture"
+                />
+                <figcaption>
+                  <p>Apartment Sunshine</p>
+                  <p>Santa Cruz de Tenerife, Spain</p>
+                </figcaption>
+              </figure>
+              <div class="homes-guests-arrow-button--sm">
+                <div class="homes-guests-arrow-button__circle"></div>
+                <svg class="homes-guests-arrow-button__icon">
+                  <use href="./images/sprite.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="homes-guests-block homes-guests-block-md-3">
+              <figure>
+                <img src="./images/hotel3.png" alt="Villa Kunerad picture" />
+                <figcaption>
+                  <p>Villa Kunerad</p>
+                  <p>Vysokie Tatry, Slowakia</p>
+                </figcaption>
+              </figure>
+              <div class="homes-guests-arrow-button--md">
+                <div class="homes-guests-arrow-button__circle"></div>
+                <svg class="homes-guests-arrow-button__icon">
+                  <use href="./images/sprite.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="homes-guests-block homes-guests-block-md-4">
+              <figure>
+                <img
+                  src="./images/hotel1.png"
+                  alt="Hostel Friendship picture"
+                />
+                <figcaption>
+                  <p>Hostel Friendship</p>
+                  <p>Berlin, Germany</p>
+                </figcaption>
+              </figure>
+              <div class="homes-guests-arrow-button">
+                <div class="homes-guests-arrow-button__circle"></div>
+                <svg class="homes-guests-arrow-button__icon">
+                  <use href="./images/sprite.svg#arrow-icon"></use>
+                </svg>
+              </div>
             </div>
           </div>
-          <div class="homes-guests-block homes-guests-block-md-3">
-            <figure>
-              <img src="./images/hotel3.png" alt="Villa Kunerad picture" />
-              <figcaption>
-                <p>Villa Kunerad</p>
-                <p>Vysokie Tatry, Slowakia</p>
-              </figcaption>
-            </figure>
-            <div class="homes-guests-arrow-button--md">
-              <div class="homes-guests-arrow-button__circle"></div>
-              <svg class="homes-guests-arrow-button__icon">
-                <use href="./images/sprite.svg#arrow-icon"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="homes-guests-block homes-guests-block-md-4">
-            <figure>
-              <img src="./images/hotel1.png" alt="Hostel Friendship picture" />
-              <figcaption>
-                <p>Hostel Friendship</p>
-                <p>Berlin, Germany</p>
-              </figcaption>
-            </figure>
-            <div class="homes-guests-arrow-button">
-              <div class="homes-guests-arrow-button__circle"></div>
-              <svg class="homes-guests-arrow-button__icon">
-                <use href="./images/sprite.svg#arrow-icon"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section class="destinations">
         <div class="destinations-heading">
@@ -329,6 +339,145 @@
           Sign up in the app and get 20% off your first booking
         </h3>
         <div class="sign-up-content__install">Install</div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews-heading">
+          <h1 class="reviews-heading__text">Guests reviews</h1>
+        </div>
+        <div class="blocks">
+          <div class="reviews-block">
+            <figure class="reviews-block">
+              <img src="./images/rev1.png" alt="Ubud Bali Resort&SPA" />
+              <figcaption class="reviews-block-content">
+                <div class="reviews-block-price">
+                  <div class="reviews-block-price__text">From 250 USD</div>
+                </div>
+                <div class="reviews-block-content__title">
+                  <p>Ubud Bali Resort&SPA</p>
+                  <p>Bali, Indonesia</p>
+                </div>
+                <div class="reviews-block-score">
+                  <div class="reviews-block-score__score">9,4</div>
+                  <div class="reviews-block-score__reviews">1324 reviews</div>
+                </div>
+              </figcaption>
+            </figure>
+            <article class="reviews-block-comment">
+              <div class="reviews-block-comment-user">
+                <svg class="reviews-block-comment-user__icon">
+                  <use href="./images/sprite.svg#account-icon-gray"></use>
+                </svg>
+                <div class="reviews-block-comment-user-info">
+                  <div class="reviews-block-comment-user-info__name">
+                    Hanna Ivanova
+                  </div>
+                  <div class="reviews-block-comment-user-info__destination">
+                    🇺🇦 Ukraine
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-block-comment-description">
+                Great location, really pleasant and clean rooms, but the thing
+                that makes this such a good place to stay are the staff. All of
+                the people are incredibly helpful and generous with their time
+                and advice.
+              </div>
+            </article>
+            <div class="reviews-block-switches-md">
+              <div class="reviews-block-switches-md__circle"></div>
+              <div class="reviews-block-switches-md__circle"></div>
+              <div class="reviews-block-switches-md__circle"></div>
+              <div class="reviews-block-switches-md__circle"></div>
+            </div>
+          </div>
+
+          <div class="reviews-block">
+            <figure class="reviews-block">
+              <img src="./images/rev2.png" alt="King Kong Hostel" />
+              <figcaption class="reviews-block-content">
+                <div class="reviews-block-price">
+                  <div class="reviews-block-price__text">From 40 USD</div>
+                </div>
+                <div class="reviews-block-content__title">
+                  <p>King Kong Hostel</p>
+                  <p>Rotterdam, Netherlands</p>
+                </div>
+                <div class="reviews-block-score">
+                  <div class="reviews-block-score__score">8,9</div>
+                  <div class="reviews-block-score__reviews">2016 reviews</div>
+                </div>
+              </figcaption>
+            </figure>
+            <article class="reviews-block-comment">
+              <div class="reviews-block-comment-user">
+                <svg class="reviews-block-comment-user__icon">
+                  <use href="./images/sprite.svg#account-icon-gray"></use>
+                </svg>
+                <div class="reviews-block-comment-user-info">
+                  <div class="reviews-block-comment-user-info__name">
+                    Adam Smith
+                  </div>
+                  <div class="reviews-block-comment-user-info__destination">
+                    🇺🇸 USA
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-block-comment-description">
+                I've been in this hostel for a month and here is the best hostel
+                of all Excellent management of excellent and ethical staff and
+                bedrooms Bathrooms are always clean and excellent<br />Most
+                importantly, those who work here are kind and good-natured.
+              </div>
+            </article>
+          </div>
+
+          <div class="reviews-block">
+            <figure class="reviews-block">
+              <img src="./images/rev3.png" alt="Rokoko Hotel" />
+              <figcaption class="reviews-block-content">
+                <div class="reviews-block-price">
+                  <div class="reviews-block-price__text">From 100 USD</div>
+                </div>
+                <div class="reviews-block-content__title">
+                  <p>Rokoko Hotel</p>
+                  <p>Ourika, Marocco</p>
+                </div>
+                <div class="reviews-block-score">
+                  <div class="reviews-block-score__score">9,1</div>
+                  <div class="reviews-block-score__reviews">815 reviews</div>
+                </div>
+              </figcaption>
+            </figure>
+            <article class="reviews-block-comment">
+              <div class="reviews-block-comment-user">
+                <svg class="reviews-block-comment-user__icon">
+                  <use href="./images/sprite.svg#account-icon-gray"></use>
+                </svg>
+                <div class="reviews-block-comment-user-info">
+                  <div class="reviews-block-comment-user-info__name">
+                    Anika Messer
+                  </div>
+                  <div class="reviews-block-comment-user-info__destination">
+                    🇩🇪 Germany
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-block-comment-description">
+                Efficient, friendly, professional, and appropriately attentive.
+                Great hotel in a great location. Easy access to all the
+                surrounding historical sites. Staff is fantastic. Will
+                definitely stay at this location during my next stay in Marocco.
+              </div>
+            </article>
+            <div class="reviews-block-arrow-button">
+              <div class="reviews-block-arrow-button__circle"></div>
+              <svg class="reviews-block-arrow-button__icon">
+                <use href="./images/sprite.svg#arrow-icon"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
