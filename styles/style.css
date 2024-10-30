@@ -267,15 +267,15 @@ main {
   gap: 16px;
 }
 
-.advantages-container {
-  margin: 0 104px;
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 104px;
 }
 
 .advantages {
-  max-width: 1440px;
-  width: 100%;
   color: #ffffff;
-  margin: 0 auto;
   padding: 120px 0;
 }
 
@@ -317,15 +317,8 @@ main {
   height: 100px;
 }
 
-.homes-guests-container {
-  background-color: #eaf0f9;
-}
-
 .homes-guests {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 120px 104px;
+  background-color: #eaf0f9;
 }
 
 .heading {
@@ -401,13 +394,6 @@ main {
 
 .homes-guests-arrow-button--sm {
   display: none;
-}
-
-.destinations {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 120px 104px;
 }
 
 .destinations-tabs {
@@ -596,10 +582,6 @@ main {
 }
 
 .reviews {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 120px 104px;
   order: 2;
 }
 
@@ -1008,8 +990,7 @@ footer {
     padding: 32px 0 40px;
   }
 
-  .advantages-container {
-    margin: 0 auto;
+  .advantages {
     padding: 24px;
   }
 
@@ -1032,7 +1013,7 @@ footer {
   }
 
   .homes-guests .blocks {
-    justify-content: center;
+    justify-self: center;
     flex-wrap: nowrap;
     gap: 16px;
   }
@@ -1051,8 +1032,8 @@ footer {
     flex-basis: 40%;
   }
 
-  .homes-guests {
-    padding: 40px 17px;
+  .container {
+    padding: 40px 15px;
   }
 
   .heading {
@@ -1105,7 +1086,6 @@ footer {
   }
 
   .destinations {
-    padding: 40px 15px;
     position: relative;
   }
 
@@ -1255,7 +1235,6 @@ footer {
 
   .reviews {
     background-color: #eaf0f9;
-    padding: 40px 17px;
     order: 1;
   }
 
