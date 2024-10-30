@@ -280,7 +280,6 @@ main {
 }
 
 .advantages-heading {
-  color: #383838;
   padding-bottom: 80px;
 }
 
@@ -290,11 +289,6 @@ main {
 }
 
 .advantages-heading__text {
-  text-align: center;
-  font-size: 40px;
-  color: #383838;
-  font-weight: 500;
-  line-height: 47px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -334,12 +328,11 @@ main {
   padding: 120px 104px;
 }
 
-.homes-guests-heading {
-  color: #383838;
-  padding-bottom: 106px;
+.heading {
+  padding-bottom: 104px;
 }
 
-.homes-guests-heading__text {
+.heading__text {
   text-align: center;
   font-size: 40px;
   color: #383838;
@@ -415,19 +408,6 @@ main {
   width: 100%;
   margin: 0 auto;
   padding: 120px 104px;
-}
-
-.destinations-heading {
-  color: #383838;
-  padding-bottom: 104px;
-}
-
-.destinations-heading__text {
-  text-align: center;
-  font-size: 40px;
-  color: #383838;
-  font-weight: 500;
-  line-height: 47px;
 }
 
 .destinations-tabs {
@@ -621,19 +601,6 @@ main {
   margin: 0 auto;
   padding: 120px 104px;
   order: 2;
-}
-
-.reviews-heading {
-  color: #383838;
-  padding-bottom: 104px;
-}
-
-.reviews-heading__text {
-  text-align: center;
-  font-size: 40px;
-  color: #383838;
-  font-weight: 500;
-  line-height: 47px;
 }
 
 .reviews-block {
@@ -1051,7 +1018,6 @@ footer {
   }
 
   .advantages-heading__text {
-    font-size: 28px;
     margin-bottom: 32px;
   }
 
@@ -1089,11 +1055,11 @@ footer {
     padding: 40px 17px;
   }
 
-  .homes-guests-heading {
+  .heading {
     padding-bottom: 32px;
   }
 
-  .homes-guests-heading__text {
+  .heading__text {
     font-size: 28px;
   }
 
@@ -1141,14 +1107,6 @@ footer {
   .destinations {
     padding: 40px 15px;
     position: relative;
-  }
-
-  .destinations-heading {
-    padding-bottom: 32px;
-  }
-
-  .destinations-heading__text {
-    font-size: 28px;
   }
 
   .destinations-tabs {
@@ -1299,14 +1257,6 @@ footer {
     background-color: #eaf0f9;
     padding: 40px 17px;
     order: 1;
-  }
-
-  .reviews-heading {
-    padding-bottom: 32px;
-  }
-
-  .reviews-heading__text {
-    font-size: 28px;
   }
 
   .reviews-block:nth-last-child(-n + 2) {
