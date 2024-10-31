@@ -218,14 +218,6 @@ main {
   grid-column: 5 / span 2;
 }
 
-.search-inputs__input-2-in {
-  display: none;
-}
-
-.search-inputs__input-2-out {
-  display: none;
-}
-
 .search-inputs__input-3 {
   border: 3px none #ffffff;
   font-size: 18px;
@@ -943,10 +935,6 @@ footer {
   .search-input-md-2-in {
     grid-row: 2;
     grid-column: 1 / span 3;
-  }
-
-  .search-inputs__input-2-out {
-    display: initial;
   }
 
   .search-input-md-2-out {
