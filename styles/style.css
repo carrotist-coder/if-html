@@ -112,7 +112,7 @@ header {
   display: none;
 }
 
-.header-menu--text {
+.header-menu__text {
   text-align: center;
   font-size: 24px;
   color: #ffffff;
@@ -120,7 +120,7 @@ header {
   line-height: 28px;
 }
 
-.header-container__logo {
+.header__logo {
   height: 40px;
   width: 205px;
 }
@@ -130,19 +130,19 @@ main {
   flex-direction: column;
 }
 
-.top-section {
+.triphouse {
   background-image: url("./../images/triphouse-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.page {
+.triphouse-content {
   padding: 293px 104px 0;
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.page__heading {
+.triphouse__heading {
   font-size: 50px;
   color: #ffffff;
   font-weight: 500;
@@ -252,7 +252,7 @@ main {
   display: none;
 }
 
-.page-apps {
+.triphouse-apps {
   padding: 120px 0;
   display: flex;
   justify-content: center;
@@ -739,32 +739,29 @@ footer {
   margin: 0 auto;
 }
 
-.footer-block--above-copyright {
+.footer__text--above-copyright {
   margin-bottom: 158px;
 }
 
-.footer-block__text {
+.footer__text {
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
   margin-bottom: 24px;
 }
 
-.footer-block__text:first-child {
+.footer__text:first-child {
   font-weight: 500;
 }
 
-.footer-copyright {
+.footer__copyright {
   width: 100%;
-}
-
-.footer-copyright__text {
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
 }
 
-.footer-logo {
+.footer__logo {
   display: none;
 }
 
@@ -819,7 +816,7 @@ footer {
     padding: 12px 16px;
   }
 
-  .header-container__logo {
+  .header__logo {
     height: 24px;
     width: 120px;
   }
@@ -856,11 +853,11 @@ footer {
     flex-basis: 10%;
   }
 
-  .page {
+  .triphouse-content {
     padding: 88px 16px 0;
   }
 
-  .page__heading {
+  .triphouse__heading {
     font-size: 30px;
     line-height: 35px;
   }
@@ -974,7 +971,7 @@ footer {
     grid-column: 1 / span 6;
   }
 
-  .page-apps {
+  .triphouse-apps {
     padding: 32px 0 40px;
   }
 
@@ -1311,22 +1308,22 @@ footer {
     padding: 0 67px 40px 67px;
   }
 
-  .footer-block--above-copyright {
+  .footer__text--above-copyright {
     margin-bottom: 36px;
   }
 
-  .footer-block__text {
+  .footer__text {
     font-size: 17px;
     text-decoration: underline;
     display: none;
   }
 
-  .footer-block__text:first-child {
+  .footer__text:first-child {
     display: initial;
     padding: 36px 0;
   }
 
-  .footer-logo {
+  .footer__logo {
     display: block;
     height: 25px;
     margin-top: 40px;
@@ -1379,15 +1376,15 @@ footer {
     transform: translate(-50%, -50%);
   }
 
-  .footer-block__text {
+  .footer__text {
     font-size: 15px;
   }
 
-  .footer-copyright__text {
+  .footer__copyright {
     font-size: 12px;
   }
 
-  .footer-logo {
+  .footer__logo {
     height: 19px;
   }
 }
