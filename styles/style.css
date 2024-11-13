@@ -112,7 +112,7 @@ header {
   display: none;
 }
 
-.header-menu--text {
+.header-menu__text {
   text-align: center;
   font-size: 24px;
   color: #ffffff;
@@ -120,7 +120,7 @@ header {
   line-height: 28px;
 }
 
-.header-container__logo {
+.header__logo {
   height: 40px;
   width: 205px;
 }
@@ -130,19 +130,19 @@ main {
   flex-direction: column;
 }
 
-.top-section {
+.triphouse {
   background-image: url("./../images/triphouse-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.page {
+.triphouse-content {
   padding: 293px 104px 0;
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.page__heading {
+.triphouse__heading {
   font-size: 50px;
   color: #ffffff;
   font-weight: 500;
@@ -218,14 +218,6 @@ main {
   grid-column: 5 / span 2;
 }
 
-.search-inputs__input-2-in {
-  display: none;
-}
-
-.search-inputs__input-2-out {
-  display: none;
-}
-
 .search-inputs__input-3 {
   border: 3px none #ffffff;
   font-size: 18px;
@@ -260,41 +252,35 @@ main {
   display: none;
 }
 
-.page-apps {
+.triphouse-apps {
   padding: 120px 0;
   display: flex;
   justify-content: center;
   gap: 16px;
 }
 
-.advantages-container {
-  margin: 0 104px;
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 104px;
 }
 
 .advantages {
-  max-width: 1440px;
-  width: 100%;
   color: #ffffff;
-  margin: 0 auto;
   padding: 120px 0;
 }
 
 .advantages-heading {
-  color: #383838;
   padding-bottom: 80px;
 }
 
-.advantages-block {
+.advantages-card {
   flex-basis: 25%;
   text-align: center;
 }
 
 .advantages-heading__text {
-  text-align: center;
-  font-size: 40px;
-  color: #383838;
-  font-weight: 500;
-  line-height: 47px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -310,7 +296,7 @@ main {
   transform: translate(-50%);
 }
 
-.advantages-block__text {
+.advantages-card__text {
   color: #383838;
   font-size: 24px;
   font-weight: 400;
@@ -318,28 +304,20 @@ main {
   margin-top: 48px;
 }
 
-.advantages-block__svg {
+.advantages-card__svg {
   width: 100px;
   height: 100px;
 }
 
-.homes-guests-container {
+.homes-guests {
   background-color: #eaf0f9;
 }
 
-.homes-guests {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 120px 104px;
+.heading {
+  padding-bottom: 104px;
 }
 
-.homes-guests-heading {
-  color: #383838;
-  padding-bottom: 106px;
-}
-
-.homes-guests-heading__text {
+.heading__text {
   text-align: center;
   font-size: 40px;
   color: #383838;
@@ -347,34 +325,34 @@ main {
   line-height: 47px;
 }
 
-.blocks {
+.cards {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   gap: 16px;
 }
 
-.homes-guests-block {
+.homes-guests-card {
   flex-basis: 25%;
   text-align: center;
   position: relative;
 }
 
-.homes-guests-block img {
+.homes-guests-card img {
   width: 100%;
   object-fit: cover;
   max-height: 296px;
   max-width: 296px;
 }
 
-.homes-guests-block figcaption p {
+.homes-guests-card figcaption p {
   margin: 24px 0;
   text-align: left;
   font-size: 24px;
   color: #bfbfbf;
 }
 
-.homes-guests-block figcaption p:first-child {
+.homes-guests-card figcaption p:first-child {
   color: #3077c6;
 }
 
@@ -408,26 +386,6 @@ main {
 
 .homes-guests-arrow-button--sm {
   display: none;
-}
-
-.destinations {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 120px 104px;
-}
-
-.destinations-heading {
-  color: #383838;
-  padding-bottom: 104px;
-}
-
-.destinations-heading__text {
-  text-align: center;
-  font-size: 40px;
-  color: #383838;
-  font-weight: 500;
-  line-height: 47px;
 }
 
 .destinations-tabs {
@@ -468,14 +426,14 @@ main {
   display: none;
 }
 
-.destinations-block {
+.destinations-card {
   flex-basis: 25%;
   text-align: center;
   margin-bottom: 48px;
   position: relative;
 }
 
-.destinations-block img {
+.destinations-card img {
   width: 100%;
   object-fit: cover;
   max-height: 296px;
@@ -483,15 +441,15 @@ main {
   transition: filter 200ms ease-in-out 10ms;
 }
 
-.destinations-block img:hover {
+.destinations-card img:hover {
   filter: brightness(50%);
 }
 
-.destinations-block:hover .destinations-block__book {
+.destinations-card:hover .destinations-card__book {
   opacity: 1;
 }
 
-.destinations-block__book {
+.destinations-card__book {
   height: 48px;
   min-width: 128px;
   color: #3077c6;
@@ -510,7 +468,7 @@ main {
   transition: opacity 200ms ease-in-out 10ms;
 }
 
-.destinations-block figcaption p {
+.destinations-card figcaption p {
   margin: 24px 0;
   text-align: left;
   font-size: 24px;
@@ -616,41 +574,24 @@ main {
 }
 
 .reviews {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 120px 104px;
   order: 2;
 }
 
-.reviews-heading {
-  color: #383838;
-  padding-bottom: 104px;
-}
-
-.reviews-heading__text {
-  text-align: center;
-  font-size: 40px;
-  color: #383838;
-  font-weight: 500;
-  line-height: 47px;
-}
-
-.reviews-block {
+.reviews-card {
   flex-basis: 33%;
   max-width: 400px;
   background-color: #eaf0f9;
   position: relative;
 }
 
-.reviews-block img {
+.reviews-card img {
   width: 100%;
   object-fit: cover;
   max-height: 400px;
   max-width: 400px;
 }
 
-.reviews-block-price {
+.reviews-card-price {
   height: 48px;
   width: 100%;
   background-color: #383838;
@@ -663,45 +604,45 @@ main {
   align-items: center;
 }
 
-.reviews-block-price__text {
+.reviews-card-price__text {
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
   margin-left: 24px;
 }
 
-.reviews-block-content {
+.reviews-card-content {
   padding: 24px 24px 0;
   position: relative;
   display: flex;
   justify-content: space-between;
 }
 
-.reviews-block-content__title {
+.reviews-card-content__title {
   display: flex;
   flex-direction: column;
 }
 
-.reviews-block figcaption p {
+.reviews-card figcaption p {
   margin-top: 16px;
   text-align: left;
   font-size: 18px;
   color: #3077c6;
 }
 
-.reviews-block figcaption p:first-of-type {
+.reviews-card figcaption p:first-of-type {
   font-weight: 500;
   margin-top: 0;
 }
 
-.reviews-block-score {
+.reviews-card-score {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 8px;
 }
 
-.reviews-block-score__score {
+.reviews-card-score__score {
   width: 48px;
   height: 32px;
   background-color: #10367c;
@@ -714,27 +655,27 @@ main {
   font-family: "Open Sans", sans-serif;
 }
 
-.reviews-block-score__reviews {
+.reviews-card-score__reviews {
   color: #bfbfbf;
   font-size: 14px;
 }
 
-.reviews-block-comment {
+.reviews-card-comment {
   padding: 24px 24px;
 }
 
-.reviews-block-comment-user {
+.reviews-card-comment-user {
   display: flex;
   gap: 16px;
   padding-bottom: 16px;
 }
 
-.reviews-block-comment-user__icon {
+.reviews-card-comment-user__icon {
   height: 65px;
   width: 65px;
 }
 
-.reviews-block-comment-user-info {
+.reviews-card-comment-user-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -742,26 +683,26 @@ main {
   font-size: 18px;
 }
 
-.reviews-block-comment-user-info__name {
+.reviews-card-comment-user-info__name {
   color: #383838;
 }
 
-.reviews-block-comment-user-info__destination {
+.reviews-card-comment-user-info__destination {
   color: #bfbfbf;
 }
 
-.reviews-block-comment-description {
+.reviews-card-comment-description {
   font-size: 18px;
   line-height: 21px;
 }
 
-.reviews-block-arrow-button {
+.reviews-card-arrow-button {
   position: absolute;
   top: 25%;
   right: -5%;
 }
 
-.reviews-block-arrow-button__circle {
+.reviews-card-arrow-button__circle {
   height: 40px;
   width: 40px;
   background-color: #f3f3f4;
@@ -770,7 +711,7 @@ main {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.reviews-block-arrow-button__icon {
+.reviews-card-arrow-button__icon {
   position: absolute;
   width: 9px;
   height: 21px;
@@ -779,7 +720,7 @@ main {
   transform: translate(-50%, -50%);
 }
 
-.reviews-block-switches-md {
+.reviews-card-switches-md {
   display: none;
 }
 
@@ -798,32 +739,29 @@ footer {
   margin: 0 auto;
 }
 
-.footer-block--above-copyright {
+.footer__text--above-copyright {
   margin-bottom: 158px;
 }
 
-.footer-block__text {
+.footer__text {
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
   margin-bottom: 24px;
 }
 
-.footer-block__text:first-child {
+.footer__text:first-child {
   font-weight: 500;
 }
 
-.footer-copyright {
+.footer__copyright {
   width: 100%;
-}
-
-.footer-copyright__text {
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
 }
 
-.footer-logo {
+.footer__logo {
   display: none;
 }
 
@@ -878,7 +816,7 @@ footer {
     padding: 12px 16px;
   }
 
-  .header-container__logo {
+  .header__logo {
     height: 24px;
     width: 120px;
   }
@@ -915,11 +853,11 @@ footer {
     flex-basis: 10%;
   }
 
-  .page {
+  .triphouse-content {
     padding: 88px 16px 0;
   }
 
-  .page__heading {
+  .triphouse__heading {
     font-size: 30px;
     line-height: 35px;
   }
@@ -996,10 +934,6 @@ footer {
     grid-column: 1 / span 3;
   }
 
-  .search-inputs__input-2-out {
-    display: initial;
-  }
-
   .search-input-md-2-out {
     grid-row: 2;
     grid-column: 4 / span 3;
@@ -1037,12 +971,11 @@ footer {
     grid-column: 1 / span 6;
   }
 
-  .page-apps {
+  .triphouse-apps {
     padding: 32px 0 40px;
   }
 
-  .advantages-container {
-    margin: 0 auto;
+  .advantages {
     padding: 24px;
   }
 
@@ -1051,7 +984,6 @@ footer {
   }
 
   .advantages-heading__text {
-    font-size: 28px;
     margin-bottom: 32px;
   }
 
@@ -1059,24 +991,24 @@ footer {
     display: none;
   }
 
-  .blocks {
+  .cards {
     justify-content: center;
     flex-wrap: wrap;
     gap: 32px;
   }
 
-  .homes-guests .blocks {
-    justify-content: center;
+  .homes-guests .cards {
+    justify-self: center;
     flex-wrap: nowrap;
     gap: 16px;
   }
 
-  .advantages-block__text {
+  .advantages-card__text {
     font-size: 17px;
     margin-top: 16px;
   }
 
-  .advantages-block__svg {
+  .advantages-card__svg {
     width: 85px;
     height: 85px;
   }
@@ -1085,33 +1017,33 @@ footer {
     flex-basis: 40%;
   }
 
-  .homes-guests {
-    padding: 40px 17px;
+  .container {
+    padding: 40px 15px;
   }
 
-  .homes-guests-heading {
+  .heading {
     padding-bottom: 32px;
   }
 
-  .homes-guests-heading__text {
+  .heading__text {
     font-size: 28px;
   }
 
-  .homes-guests-block-md-4 {
+  .homes-guests-card-md-4 {
     display: none;
   }
 
-  .homes-guests-block {
+  .homes-guests-card {
     text-align: left;
   }
 
-  .homes-guests-block img {
+  .homes-guests-card img {
     height: 155px;
     width: 155px;
     margin-bottom: 8px;
   }
 
-  .homes-guests-block figcaption p {
+  .homes-guests-card figcaption p {
     margin: 4px 0;
     text-align: left;
     font-size: 12px;
@@ -1139,16 +1071,7 @@ footer {
   }
 
   .destinations {
-    padding: 40px 15px;
     position: relative;
-  }
-
-  .destinations-heading {
-    padding-bottom: 32px;
-  }
-
-  .destinations-heading__text {
-    font-size: 28px;
   }
 
   .destinations-tabs {
@@ -1175,22 +1098,22 @@ footer {
     flex-basis: 33%;
   }
 
-  .destinations .blocks {
+  .destinations .cards {
     justify-content: center;
     flex-wrap: nowrap;
     gap: 16px;
     height: 178px;
   }
 
-  .destinations-block {
+  .destinations-card {
     margin-bottom: 40px;
   }
 
-  .destinations-block:nth-last-child(-n + 2) {
+  .destinations-card:nth-last-child(-n + 2) {
     display: none;
   }
 
-  .destinations-block img {
+  .destinations-card img {
     width: 100%;
     object-fit: fill;
     min-height: 156px;
@@ -1198,15 +1121,15 @@ footer {
     transition: none;
   }
 
-  .destinations-block img:hover {
+  .destinations-card img:hover {
     filter: brightness(100%);
   }
 
-  .destinations-block__book {
+  .destinations-card__book {
     display: none;
   }
 
-  .destinations-block figcaption p {
+  .destinations-card figcaption p {
     margin: 8px 0;
     font-size: 12px;
   }
@@ -1297,96 +1220,87 @@ footer {
 
   .reviews {
     background-color: #eaf0f9;
-    padding: 40px 17px;
     order: 1;
   }
 
-  .reviews-heading {
-    padding-bottom: 32px;
-  }
-
-  .reviews-heading__text {
-    font-size: 28px;
-  }
-
-  .reviews-block:nth-last-child(-n + 2) {
+  .reviews-card:nth-last-child(-n + 2) {
     display: none;
   }
 
-  .reviews-block {
+  .reviews-card {
     min-width: 325px;
   }
 
-  .reviews-block-price {
+  .reviews-card-price {
     display: none;
   }
 
-  .reviews-block-content {
+  .reviews-card-content {
     padding: 12px 15px 0;
   }
 
-  .reviews-block figcaption p {
+  .reviews-card figcaption p {
     margin-top: 8px;
     font-size: 15px;
   }
 
-  .reviews-block-score {
+  .reviews-card-score {
     gap: 4px;
   }
 
-  .reviews-block-score__score {
+  .reviews-card-score__score {
     width: 39px;
     height: 26px;
     font-size: 15px;
     font-family: "Open Sans", sans-serif;
   }
 
-  .reviews-block-score__reviews {
+  .reviews-card-score__reviews {
     font-size: 12px;
   }
 
-  .reviews-block-comment {
+  .reviews-card-comment {
     padding: 12px 16px 32px 18px;
   }
 
-  .reviews-block-comment-user {
+  .reviews-card-comment-user {
     gap: 8px;
   }
 
-  .reviews-block-comment-user__icon {
+  .reviews-card-comment-user__icon {
     height: 52px;
     width: 52px;
   }
 
-  .reviews-block-comment-user-info {
+  .reviews-card-comment-user-info {
     gap: 4px;
     font-size: 15px;
   }
 
-  .reviews-block-comment-description {
+  .reviews-card-comment-description {
     font-size: 15px;
     line-height: 17px;
   }
 
-  .reviews-block-arrow-button {
+  .reviews-card-arrow-button {
     display: none;
   }
 
-  .reviews-block-switches-md {
+  .reviews-card-switches-md {
     display: flex;
     justify-content: center;
     gap: 8px;
     padding-bottom: 40px;
   }
 
-  .reviews-block-switches-md__circle {
+  .reviews-card-switches-md__circle {
     border: #333333 solid 1px;
     border-radius: 50%;
     height: 8px;
     width: 8px;
   }
 
-  .reviews-block-switches-md__circle:first-child {
+  .reviews-card-switches-md__circle:first-child {
     background-color: #333333;
   }
 
@@ -1394,22 +1308,22 @@ footer {
     padding: 0 67px 40px 67px;
   }
 
-  .footer-block--above-copyright {
+  .footer__text--above-copyright {
     margin-bottom: 36px;
   }
 
-  .footer-block__text {
+  .footer__text {
     font-size: 17px;
     text-decoration: underline;
     display: none;
   }
 
-  .footer-block__text:first-child {
+  .footer__text:first-child {
     display: initial;
     padding: 36px 0;
   }
 
-  .footer-logo {
+  .footer__logo {
     display: block;
     height: 25px;
     margin-top: 40px;
@@ -1421,11 +1335,11 @@ footer {
 @media only screen and (max-width: 480px) {
   /*Mobile phones*/
 
-  .advantages-block__text {
+  .advantages-card__text {
     font-size: 15px;
   }
 
-  .advantages-block__svg {
+  .advantages-card__svg {
     width: 70px;
     height: 70px;
   }
@@ -1434,7 +1348,7 @@ footer {
     flex-basis: 100%;
   }
 
-  .homes-guests-block-md-3 {
+  .homes-guests-card-md-3 {
     display: none;
   }
 
@@ -1462,15 +1376,15 @@ footer {
     transform: translate(-50%, -50%);
   }
 
-  .footer-block__text {
+  .footer__text {
     font-size: 15px;
   }
 
-  .footer-copyright__text {
+  .footer__copyright {
     font-size: 12px;
   }
 
-  .footer-logo {
+  .footer__logo {
     height: 19px;
   }
 }
